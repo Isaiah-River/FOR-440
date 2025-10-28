@@ -97,7 +97,7 @@ The batch file performed the following critical actions:
 1. [Investigation Scope](#1-investigation-scope)
 2. [Findings and Analysis](#2-findings-and-analysis)
 3. [Attack Timeline Reconstruction](#3-attack-timeline-reconstruction)
-4. [Indicators of Compromise](#indicators-of-compromise-iocs)
+4. [Indicators of Compromise](#4-indicators-of-compromise-iocs)
 5. [Remediation Steps](#5-remediation-steps)
 6. [Recommendations](#6-recommendations)
 7. [Lessons Learned](#7-lessons-learned)
