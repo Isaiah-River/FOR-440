@@ -100,9 +100,8 @@ The batch file performed the following critical actions:
 4. [Indicators of Compromise](#4-indicators-of-compromise-iocs)
 5. [Remediation Steps](#5-remediation-steps)
 6. [Recommendations](#6-recommendations)
-7. [Lessons Learned](#7-lessons-learned)
-8. [Conclusion](#8-conclusion)
-9. [Appendices](#9-appendices)
+7. [Conclusion](#8-conclusion)
+8. [Appendices](#9-appendices)
 
 ---
 
@@ -1311,7 +1310,7 @@ Get-LocalUser | Where-Object {
 
 ---
 
-## 8. Conclusion
+## 7. Conclusion
 
 This threat hunting operation successfully identified and analyzed all four malicious artifacts from the Thug Lyfe Campaign 2. Most significantly, we discovered and fully analyzed **asefa.bat** - a critical piece of malware that was referenced but not available to the original malware analysts.
 
@@ -1343,7 +1342,7 @@ The original malware analysis report explicitly stated that asefa.bat was not av
 
 ---
 
-## 9. Appendices
+## 8. Appendices
 
 ### Appendix A: Complete IOC List (JSON Format)
 
@@ -1435,7 +1434,13 @@ The original malware analysis report explicitly stated that asefa.bat was not av
 
 ---
 
-### Appendix B: Sysmon Evidence Summary
+### Appendix B: ThugLyfeToolkit.ps1
+
+### Appendix C: Artifacts.csv
+
+### Appendix D: FindAsefa.ps1
+
+### Appendix E: Sysmon Collected Evidence
 
 **Total Sysmon Events Analyzed:** 30+ Process Creation events (Event ID 1)  
 **Key Event:** File Creation Event ID 11 (asefa.bat created by thug_simulator.exe)  
@@ -1447,36 +1452,7 @@ The original malware analysis report explicitly stated that asefa.bat was not av
 
 ---
 
-### Appendix C: Email to Malware Analysis Team
 
-**Status:** REQUIRED DELIVERABLE - Must be written and submitted separately
 
-**Key Points to Include:**
-1. asefa.bat was successfully located and analyzed
-2. Sysmon telemetry captured complete execution chain
-3. Batch file performed 30+ malicious commands
-4. Created 2 backdoor admin accounts
-5. Cleared all major event logs
-6. Established 3 persistence mechanisms
-7. Request to update official malware analysis report
 
----
 
-## Report Metadata
-
-**Report ID:** THR-2025-THUGLYFE2-001  
-**Classification:** CONFIDENTIAL  
-**Distribution:** Incident Response Team, SOC, Security Management, Malware Analysis Team  
-**Retention:** 7 years per organizational policy  
-**Next Review:** November 26, 2025
-
----
-
-**Prepared By:**  
-Security Operations Team  
-Threat Hunting Division  
-October 26, 2025
-
----
-
-*End of Report*
