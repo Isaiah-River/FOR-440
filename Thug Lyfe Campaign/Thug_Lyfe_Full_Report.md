@@ -1434,25 +1434,48 @@ The original malware analysis report explicitly stated that asefa.bat was not av
 
 ---
 
-### Appendix B: ThugLyfeToolkit.ps1
+### Attatchment B: ThugLyfeToolkit.ps1
 
-### Appendix C: Artifacts.csv
+Powershell toolkit to find initial artifacts.
 
-### Appendix D: FindAsefa.ps1
+**Script File:**
+- [ThugLyfeToolkit.ps1](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/ThugLyfeToolkit.ps1)
 
-### Appendix E: Sysmon Collected Evidence
+---
+
+### Attatchment C: Artifacts.csv
+
+Collected artifacts from ThugLyfeToolkit.ps1
+
+**Evidence File:**
+- [Artifacts.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Artifacts.csv)
+
+---
+
+### Attatchment D: FindAsefa.ps1
+
+Powershell toolkit for navigating Sysmon logs to find asefa.bat evidence
+
+**Script File:**
+- [FindAsefa.ps1](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/FindAsefa.ps1)
+
+### Attatchment E: Sysmon Collected Evidence
 
 **Total Sysmon Events Analyzed:** 30+ Process Creation events (Event ID 1)  
 **Key Event:** File Creation Event ID 11 (asefa.bat created by thug_simulator.exe)  
 **Critical Evidence:** Complete command-line arguments for all 30 child processes
 
 **Evidence Files:**
-- Sysmon_FileCreation.csv (Event ID 11)
-- Sysmon_ProcessCreation.csv (Event ID 1)
-
----
+- [Sysmon_File_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_File_Creation.csv) (Event ID 11)
+- [Sysmon_Process_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_Process_Creation.csv) (Event ID 1)
 
 
 
 
 
+
+
+<!--Back to Top button-->
+<p align="center";>
+<a href="#"><img alt="Static Badge" src="https://img.shields.io/badge/Back%20to%20Top%20-%20Back%20to%20Top?style=flat&color=%23555"></a>
+</p>
