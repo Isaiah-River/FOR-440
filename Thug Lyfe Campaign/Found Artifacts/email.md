@@ -4,12 +4,13 @@
 
 **To:** malware-analysis-team@company.com  
 **Cc:** threat-intel@company.com, incident-response@company.com  
-**Subject:** [URGENT] Critical Discovery: asefa.bat - Complete Behavioral Analysis Available  
+**Subject:** [URGENT] Critical Discovery: asefa.bat
 **Priority:** High  
-**Attachments:** 
-- asefa_bat_sysmon_analysis.csv
-- asefa_bat_file_creation.csv
-- asefa_bat_process_creation.csv
+**Attachments:**
+1. Thug_Lyfe_Full_Report.md (Full report)
+2. [Artifacts.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Artifacts.csv) (Various collected arifacts)
+3. [Sysmon_File_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_File_Creation.csv) (asefa.bat file creation found within Sysmon)
+4. [Sysmon_Process_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_Process_Creation.csv) (Various process creations found within Sysmon) 
 
 ---
 
@@ -488,9 +489,10 @@ The complete attack chain maps to the following techniques:
 
 I have attached the complete Sysmon analysis in CSV format:
 
-1. **asefa_bat_file_creation.csv** - File creation event (Sysmon Event ID 11)
-2. **asefa_bat_process_creation.csv** - All 36 process execution events (Sysmon Event ID 1)
-3. **asefa_bat_sysmon_analysis.csv** - Complete combined analysis
+**Attachments:**
+1. [Sysmon_File_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_File_Creation.csv) - File creation event (Sysmon Event ID 11)
+2. [Sysmon_Process_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_Process_Creation.csv) - All 36 process execution events (Sysmon Event ID 1)
+
 
 These files contain:
 - Exact timestamps for each malicious action
@@ -537,19 +539,9 @@ The discovery and behavioral analysis of asefa.bat represents a **critical intel
 
 ...demonstrates a **highly sophisticated threat actor** with deep Windows internals knowledge and advanced operational security practices.
 
-Thank you for your excellent initial analysis, which provided the foundation that enabled this discovery. The IOCs and TTPs you documented allowed us to successfully hunt and capture the complete attack chain. This collaboration between malware analysis and threat hunting has significantly enhanced our understanding of this threat.
-
-I am available for immediate consultation and stand ready to provide any additional forensic data, conduct follow-up analysis, or assist with enterprise-wide hunting operations.
-
 ---
 
 **Best regards,**
 
 Isaiah River   
 Date: October 26, 2025
-
-**Attachments:**
-1. Thug_Lyfe_Full_Report.md (Full report)
-2. [Artifacts.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Artifacts.csv) (Various collected arifacts)
-3. [Sysmon_File_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_File_Creation.csv) (asefa.bat file creation found within Sysmon)
-4. [Sysmon_Process_Creation.csv](https://github.com/Isaiah-River/FOR-440/blob/main/Thug%20Lyfe%20Campaign/Found%20Artifacts/Sysmon_Process_Creation.csv) (Various process creations found within Sysmon) 
