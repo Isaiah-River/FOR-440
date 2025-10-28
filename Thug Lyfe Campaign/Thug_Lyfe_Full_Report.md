@@ -1,4 +1,55 @@
-# Threat Hunting Report: Thug Lyfe Campaign 2
+
+***
+<div align="center">
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░<br>
+░░░░████████╗██╗░░██╗██████╗░███████╗░█████╗░████████╗░░░░<br>
+░░░░╚══██╔══╝██║░░██║██╔══██╗██╔════╝██╔══██╗╚══██╔══╝░░░░<br>
+░░░░░░░██║░░░███████║██████╔╝█████╗░░███████║░░░██║░░░░░░░<br>
+░░░░░░░██║░░░██╔══██║██╔══██╗██╔══╝░░██╔══██║░░░██║░░░░░░░<br>
+░░░░░░░██║░░░██║░░██║██║░░██║███████╗██║░░██║░░░██║░░░░░░░<br>
+░░░░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░░░░<br>
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░<br>
+██╗░░██╗██╗░░░██╗███╗░░░██╗████████╗██╗███╗░░░██╗░██████╗░<br>
+██║░░██║██║░░░██║████╗░░██║╚══██╔══╝██║████╗░░██║██╔════╝░<br>
+███████║██║░░░██║██╔██╗░██║░░░██║░░░██║██╔██╗░██║██║░░███╗<br>
+██╔══██║██║░░░██║██║╚██╗██║░░░██║░░░██║██║╚██╗██║██║░░░██║<br>
+██║░░██║╚██████╔╝██║░╚████║░░░██║░░░██║██║░╚████║╚██████╔╝<br>
+╚═╝░░╚═╝░╚═════╝░╚═╝░░╚═══╝░░░╚═╝░░░╚═╝╚═╝░░╚═══╝░╚═════╝░<br>
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░<br>
+░░██████╗░███████╗██████╗░░██████╗░██████╗░████████╗░░░░░░<br>
+░░██╔══██╗██╔════╝██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝░██╗░░<br>
+░░██████╔╝█████╗░░██████╔╝██║░░░██║██████╔╝░░░██║░░░░╚═╝░░<br>
+░░██╔══██╗██╔══╝░░██╔═══╝░██║░░░██║██╔══██╗░░░██║░░░░██╗░░<br>
+░░██║░░██║███████╗██║░░░░░╚██████╔╝██║░░██║░░░██║░░░░╚═╝░░<br>
+░░╚═╝░░╚═╝╚══════╝╚═╝░░░░░░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░░░░░░<br>
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░████████╗██╗░░██╗██╗░░░██╗░██████╗░░░░░░░░░░░░<br>
+░░░░░░░░░░░░╚══██╔══╝██║░░██║██║░░░██║██╔════╝░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░░██║░░░███████║██║░░░██║██║░░███╗░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░░██║░░░██╔══██║██║░░░██║██║░░░██║░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░░██║░░░██║░░██║╚██████╔╝╚██████╔╝░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░░╚═╝░░░╚═╝░░╚═╝░╚═════╝░░╚═════╝░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░██╗░░██╗░░░██╗███████╗███████╗░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░██║░░╚██╗░██╔╝██╔════╝██╔════╝░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░██║░░░╚████╔╝░█████╗░░█████╗░░░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░██║░░░░╚██╔╝░░██╔══╝░░██╔══╝░░░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░███████╗██║░░░██║░░░░░███████╗░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░╚══════╝╚═╝░░░╚═╝░░░░░╚══════╝░░░░░░░░░░░░░░<br>
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░<br>
+
+<h3> Author: Isaiah River</h3>
+</div>
+
+<!--
+<div align="center">
+<h1>Table of Contents</h1>
+</div>
+-->
+
+
+
+# Threat Hunting Report: Thug Lyfe Campaign
 
 **Classification:** CONFIDENTIAL  
 **Report Date:** October 26, 2025  
@@ -1266,68 +1317,6 @@ Get-LocalUser | Where-Object {
 - Red team exercise focused on Thug Lyfe TTPs
 - Review and update security policies
 - Implement Zero Trust principles
-
----
-
-## 7. Lessons Learned
-
-### 7.1 What Went Well
-
-1. **Sysmon Telemetry Proved Critical**
-   - Only detection method that survived log clearing
-   - Captured complete execution chain of asefa.bat
-   - Provided Process IDs, command lines, timestamps
-
-2. **Systematic Hunting Approach**
-   - All four malicious files identified
-   - Attack chain fully reconstructed
-   - Persistence mechanisms documented
-
-3. **Hash Validation**
-   - All file hashes matched malware report
-   - Confirmed we were analyzing known Thug Lyfe artifacts
-
----
-
-### 7.2 What Could Be Improved
-
-1. **Detection Speed**
-   - 10 seconds elapsed between attack start and completion
-   - No real-time detection occurred
-   - Backdoor accounts existed for extended period before discovery
-
-2. **Event Log Protection**
-   - Logs were successfully cleared by attacker
-   - No tamper protection enabled
-   - Critical evidence lost
-
-3. **User Training**
-   - User opened malicious document
-   - No awareness of macro-enabled document risks
-
----
-
-### 7.3 Security Gaps Identified
-
-1. **No Sysmon Deployment**
-   - Critical visibility gap
-   - Attack would have been undetectable without Sysmon
-
-2. **No Log Clearing Detection**
-   - wevtutil commands should trigger immediate alerts
-   - No monitoring of Security Event ID 1102 (log cleared)
-
-3. **No Account Creation Monitoring**
-   - Backdoor accounts created without detection
-   - No alerting on additions to Administrators group
-
-4. **Inadequate Email Filtering**
-   - Macro document not blocked
-   - No sandboxing in place
-
-5. **Application Control**
-   - Executables run from any location
-   - C:\ProgramData not restricted
 
 ---
 
