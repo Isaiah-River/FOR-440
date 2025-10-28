@@ -38,7 +38,7 @@
 ░░░░░░░░░░░░░░╚══════╝╚═╝░░░╚═╝░░░░░╚══════╝░░░░░░░░░░░░░░<br>
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░<br>
 
-<h3> Author: Isaiah River</h3>
+<h3> Analyst: Isaiah River</h3>
 </div>
 
 **Classification:** CONFIDENTIAL  
@@ -1351,7 +1351,7 @@ The original malware analysis report explicitly stated that asefa.bat was not av
   "campaign": "Thug Lyfe Campaign 2",
   "threat_actor": "Thug Lyfe",
   "report_date": "2025-10-26",
-  "analyst": "Security Operations Team",
+  "analyst": "Isaiah River",
   
   "file_hashes": {
     "sha256": [
