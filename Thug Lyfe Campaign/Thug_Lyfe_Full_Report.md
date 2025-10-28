@@ -100,8 +100,8 @@ The batch file performed the following critical actions:
 4. [Indicators of Compromise](#4-indicators-of-compromise-iocs)
 5. [Remediation Steps](#5-remediation-steps)
 6. [Recommendations](#6-recommendations)
-7. [Conclusion](#8-conclusion)
-8. [Appendices](#9-appendices)
+7. [Conclusion](#7-conclusion)
+8. [Appendices](#8-appendices)
 
 ---
 
