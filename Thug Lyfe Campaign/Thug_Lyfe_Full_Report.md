@@ -41,22 +41,13 @@
 <h3> Author: Isaiah River</h3>
 </div>
 
-<!--
-<div align="center">
-<h1>Table of Contents</h1>
-</div>
--->
-
-
-
-# Threat Hunting Report: Thug Lyfe Campaign
-
 **Classification:** CONFIDENTIAL  
 **Report Date:** October 26, 2025  
 **Hunting Period:** October 26, 2025, 11:12 AM - 11:45 AM  
 **Report Version:** 1.0  
-**Prepared By:** Security Operations Team  
 **System Analyzed:** WIN10-ISAIAH
+
+
 
 ---
 
